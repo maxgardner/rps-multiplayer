@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock Paper Scissors Mothafucka</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+	<form>
+		<label>Username</label>
+		<input id="username" type="text">
+		<button id="user-signup" for="username" type="submit">Enter Game</button>
+	</form>
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDBtQZ6vbG8pPikOvL6I40K3NenqARnX60",
+	    authDomain: "rock-paper-scissors-be01b.firebaseapp.com",
+	    databaseURL: "https://rock-paper-scissors-be01b.firebaseio.com",
+	    storageBucket: "rock-paper-scissors-be01b.appspot.com",
+	    messagingSenderId: "280128286631"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="assets/js/game.js"></script>
+
+</body>
+</html>
